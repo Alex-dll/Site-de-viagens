@@ -70,7 +70,7 @@ header nav ul li{
 }
 
 .pacotes .pacotes__cards{
-    margin: 25px;
+    margin: 25px auto;
     justify-content: center;
     max-width: 950px;
     display: flex;
@@ -155,6 +155,7 @@ header nav ul li{
 }
 
 .servicos .card{
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -168,6 +169,14 @@ header nav ul li{
 
 .servicos .servicos__title{
     text-align: center;
+}
+
+.servicos .servicos__card{
+    margin: auto;
+    max-width: 950px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
