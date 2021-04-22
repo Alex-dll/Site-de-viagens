@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #762A2E;
+    color: white;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+}
+
+/* Header */
+
+header{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('./assets/headerimg.jpg') ;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 30px;
+}
+
+header nav p{
+    font-size: bold;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+.header__content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header__content h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+
+/* Pacotes */
+
+.pacotes {
+    margin: auto;
+    padding: 15px;
+    background: #e5e5e5;
+}
+
+.pacotes .pacotes__title{
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.pacotes .pacotes__cards{
+    margin: 25px;
+    justify-content: center;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pacotes .card {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    background: white;
+    border-radius: 24px 0 24px 0;
+    margin: 25px auto;
+}
+
+.pacotes .card__image{
+    object-fit: cover;
+    height: 200px;
+    width: 250px;
+    border-radius: 24px 0 0 0;
+}
+
+.pacotes .card__content{
+    padding: 0 15px;
+}
+
+.pacotes .card__content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.pacotes .card__content ul li{
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .card__content ul li svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card__content h1{
+    font-size: 1rem;
+}
+
+
+.pacotes .card .card__tag--top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #F19B39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+
+.pacotes .card .card__tag--botton{
+    position: absolute;
+    left: 0;
+    top: 175px;
+    background: #1D61DD;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card__tag p {
+    margin: 0;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos{
+    padding: 15px;
+}
+
+.servicos .card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+}
+
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+}
+
+.servicos .servicos__title{
+    text-align: center;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 480px) {
+    body{
+        margin-bottom: 55px;
+    }
+
+    header nav ul{
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background: #1D61DD;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
