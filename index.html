@@ -10,28 +10,28 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <nav>
             <P>Alex Viagens</P>
             <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Contatos</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
 
-        <div class="header__content">
+        <div id="home" class="header__content">
             <h1>Monte Fuji</h1>
-            <p>Conheça o Monte Fuji, veja as belezas desse lugar! O embarque está proximo, junte-se a nós neste experiência.</p>
             <button>Saiba Mais</button>
+            <p>Conheça o Monte Fuji, veja as belezas desse lugar! O embarque está proximo, junte-se a nós neste experiência.</p>
         </div>
     </header>
 
-    <section class="pacotes">
+    <section id="pacotes" class="pacotes">
 
         <h1 class="pacotes__title">Conheça nossos pacotes</h1>
         <div class="pacotes__cards" >
@@ -96,29 +96,52 @@
        
     </section>
     
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <h1 class="servicos__title">Serviços</h1>
         <div class="servicos__card">
-            
-            <div class="card">
-                <i data-feather="map"></i>
-                <h3>Tuors Guiados</h3>
-                <p>Os tuors guiados são passeios realizados com auxílio de um guia, que além de dar informações sobre o local vai nos conduzir ao longo do nosso trajeto</p>
-            </div>
-            <div class="card">
-                <i data-feather="camera"></i>
-                <h3>Fotografia Profissional</h3>
-                <p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar</p>
-            </div>
-            <div class="card">
-                <i data-feather="navigation"></i>
-                <h3>Aluguel de Veículo</h3>
-                <p>Para os clientes que preferem explorar o ambiente sozinho e curte a liberdade, oferecemos o serviço de aluguel de veículos com preços super em conta</p>
-            </div>
-            </div>
+                <div class="card">
+                    <i data-feather="map"></i>
+                    <div class="card__content">
+                        <h3>Tuors Guiados</h3>
+                        <p>Os tuors guiados são passeios realizados com auxílio de um guia, que além de dar informações sobre o local vai nos conduzir ao longo do nosso trajeto</p>
+                    </div>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="card">
+                    <i data-feather="camera"></i>
+                    <div class="card__content">
+                        <h3>Fotografia Profissional</h3>
+                        <p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar</p>
+                    </div>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="card">
+                    <i data-feather="navigation"></i>
+                    <div class="card__content">
+                        <h3>Aluguel de Veículo</h3>
+                        <p>Para os clientes que preferem explorar o ambiente sozinho e curte a liberdade, oferecemos o serviço de aluguel de veículos com preços super em conta</p>
+                    </div>
+                    <button>Saiba Mais</button>    
+                </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contato">
+        <div class="contato__card">
+            <h1>Entre em contato</h1>
+            <ul>
+                <li> <i data-feather="map"></i> Brasilia, DF</li>
+                <li> <i data-feather="map"></i> contato@alexviagens.com.br</li>
+                <li> <i data-feather="map"></i> (55) 61 99999-9999</li>
+            </ul>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=brasilia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style></div></div>
     </section>
     <script>
         feather.replace()
     </script>
+    <script src="./app.js"></script>
 </body>
 </html>
